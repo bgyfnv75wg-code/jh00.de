@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jh00.de – Jakob</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f5f4f9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      color: #2c2c2a;
+    }
+
+    .hero {
+      text-align: center;
+      background: linear-gradient(135deg, #EEEDFE 0%, #E1F5EE 50%, #E6F1FB 100%);
+      border-radius: 16px;
+      padding: 4rem 2rem 3rem;
+      width: 100%;
+      max-width: 640px;
+      margin-bottom: 1.5rem;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #7F77DD, #1D9E75);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 500;
+      color: white;
+      margin: 0 auto 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: #3C3489;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #534AB7;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 1.2rem;
+      padding: 4px 16px;
+      border-radius: 99px;
+      font-size: 13px;
+      font-weight: 500;
+      background: #E1F5EE;
+      color: #085041;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 16px;
+      width: 100%;
+      max-width: 640px;
+      margin-bottom: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border: 0.5px solid rgba(0,0,0,0.1);
+      border-radius: 16px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+
+    .card svg {
+      margin-bottom: 0.75rem;
+    }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 500;
+      color: #2c2c2a;
+      margin-bottom: 0.4rem;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #5f5e5a;
+      line-height: 1.5;
+    }
+
+    .footer {
+      font-size: 13px;
+      color: #888780;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #1D9E75;
+      display: inline-block;
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.5rem; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="avatar">JH</div>
+    <h1>Hallo, ich bin Jakob.</h1>
+    <p>Willkommen auf meiner persönlichen Seite.</p>
+    <span class="badge">✦ Coming soon</span>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7F77DD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+      </svg>
+      <h3>Über mich</h3>
+      <p>Hier kommt bald eine kurze Vorstellung von dir.</p>
+    </div>
+    <div class="card">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/>
+      </svg>
+      <h3>Interessen</h3>
+      <p>Was dich begeistert – deine Hobbys und Leidenschaften.</p>
+    </div>
+    <div class="card">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/>
+      </svg>
+      <h3>Kontakt</h3>
+      <p>Wie man dich erreichen kann – demnächst hier.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="dot"></span>
+    jh00.de
+  </div>
+
+</body>
+</html>
